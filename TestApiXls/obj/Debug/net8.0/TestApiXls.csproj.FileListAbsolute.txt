@@ -1,0 +1,7 @@
+C:\Users\Bureau\source\repos\TestApiXls\TestApiXls\obj\Debug\net8.0\TestApiXls.csproj.AssemblyReference.cache
+C:\Users\Bureau\source\repos\TestApiXls\TestApiXls\obj\Debug\net8.0\TestApiXls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bureau\source\repos\TestApiXls\TestApiXls\obj\Debug\net8.0\TestApiXls.AssemblyInfoInputs.cache
+C:\Users\Bureau\source\repos\TestApiXls\TestApiXls\obj\Debug\net8.0\TestApiXls.AssemblyInfo.cs
+C:\Users\Bureau\source\repos\TestApiXls\TestApiXls\obj\Debug\net8.0\TestApiXls.csproj.CoreCompileInputs.cache
+C:\Users\Bureau\source\repos\TestApiXls\TestApiXls\obj\Debug\net8.0\TestApiXls.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bureau\source\repos\TestApiXls\TestApiXls\obj\Debug\net8.0\TestApiXls.MvcApplicationPartsAssemblyInfo.cache
