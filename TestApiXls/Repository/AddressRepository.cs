@@ -6,12 +6,13 @@ namespace TestApiXls.Repository
     {
         private readonly DataContext _context;
 
+        public ICollection<Models.Address> GetAddresses ()
+        {
+            return _context.addresses.OrderBy(a => a.id).ToList();
+        }
         public AddressRepository(DataContext context)
         {
             _context = context;
         }
-
-        public ICollection<Address> GetAddresses{
-        return _context.Address.OrderBy().;
-}
+    }
 }

@@ -1,30 +1,35 @@
 ﻿using System.Net.NetworkInformation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using TestApiXls.Models;
 
 namespace TestApiXls.Controllers
 {
     [Route("api/shipmentBc")]
     [ApiController]
-    public class ShipmentBcController : ControllerBase
+    public class ShipmentBcController : Controller
     {
 
         [HttpGet]
-        ShipmentBc[] GetShipmentBcs(StdShipmentRequest request)
+        [ProducesResponseType(200, Type = typeof(IEnumerable<ShipmentBc>))]
+        public IActionResult GetShipmentBcs()
         {
+            
             return res;
         }
 
         [HttpGet("{id}")]
-        ShipmentBc GetShipmentBc(StdShipmentRequest request)
+        ShipmentBc GetShipmentBc()
         {
             return res;
         }
 
 
         [HttpPost]
-        public ShipmentBc[] createShipmentBc(
+        [ProducesResponseType(200, Type = typeof(IEnumerable<ShipmentBc>))]
+        public IActionResult CreateShipmentBc(
             int customer_countrycode,
             int customer_centernumber,
             int customer_number,
@@ -41,47 +46,15 @@ namespace TestApiXls.Controllers
             String reference3,
             String reference4
             )
-        {}
+        {
+            InsertDataOperation( )
+        }
 
+        public ShipmentBcController()
+        {
+            
+        }
     }
-
-    [Route("api/shipmentWithLabelBc")]
-    [ApiController]
-    public class ShipmentBcController : ControllerBase
-    {
-
-        [HttpGet]
-        ShipmentBc[] GetShipmentBcs(StdShipmentRequest request)
-        {
-            return res;
-        }
-
-        [HttpGet("{id}")]
-        ShipmentBc GetShipmentBc(StdShipmentRequest request)
-        {
-            return res;
-        }
-
-
-        [HttpPost]
-        public ShipmentBc[] createShipmentBc(
-            int customer_countrycode,
-            int customer_centernumber,
-            int customer_number,
-            Address receiveraddress,
-            AddressInfo receiverInfo,
-            Address shipperAdress,
-            AddressInfo shipperInfo,
-            Address retourAddress,
-            /*StdServices services,*/
-            String weight,
-            String shippingdate,
-            String referencenumber,
-            String reference2,
-            String reference3,
-            String reference4
-            )
-        { }
 
     }
 }
