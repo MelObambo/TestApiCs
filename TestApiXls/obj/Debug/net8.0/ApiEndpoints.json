@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "TestApiXls.Controllers.AddressController",
+    "Method": "GetAddresses",
+    "RelativePath": "api/address",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestApiXls.Controllers.AddressController",
+    "Method": "GetAddresses",
+    "RelativePath": "api/address/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

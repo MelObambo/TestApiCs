@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using TestApiXls.Data;
 using MySql.Data.MySqlClient;
+using TestApiXls.Interfaces;
+using TestApiXls.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>();
+builder.Services.AddScoped<IAddressRepository, AddressRepository>();
 
 var app = builder.Build();
 

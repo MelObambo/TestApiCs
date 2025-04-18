@@ -10,15 +10,29 @@ namespace TestApiXls.Controllers
         private readonly IAddressRepository _addressRepository;
 
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Models.Address>))]
+        //        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Models.Address>))]
         public IActionResult GetAddresses()
         {
             var addresses = _addressRepository.GetAddresses();
 
-            if (!ModelState.IsValid)
+            /*if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
-            }
+            }*/
+            return Ok(addresses);
+            // return View(addresses);
+        }
+
+        [HttpGet("{name}")]
+        //        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Models.Address>))]
+        public IActionResult GetAddresses(string name)
+        {
+            var addresses = _addressRepository.GetAddresses(name);
+
+            /*if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }*/
             return Ok(addresses);
             // return View(addresses);
         }

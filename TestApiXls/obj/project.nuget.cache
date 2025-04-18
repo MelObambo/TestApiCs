@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+MXhLK06Uuw=",
+  "dgSpecHash": "+PetbI+4jKM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bureau\\Source\\Repos\\TestApi\\TestApiXls\\TestApiXls.csproj",
+  "projectFilePath": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\TestApiXls.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bureau\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Bureau\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

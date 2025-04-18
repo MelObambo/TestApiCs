@@ -7,7 +7,7 @@ using TestApiXls.Models;
 
 namespace TestApiXls.Controllers
 {
-    [Route("api/shipmentBc")]
+    /* [Route("api/shipmentBc")]
     [ApiController]
     public class ShipmentBcController : Controller
     {
@@ -16,8 +16,6 @@ namespace TestApiXls.Controllers
         [ProducesResponseType(200, Type = typeof(IEnumerable<ShipmentBc>))]
         public IActionResult GetShipmentBcs()
         {
-            
-            return res;
         }
 
         [HttpGet("{id}")]
@@ -38,7 +36,7 @@ namespace TestApiXls.Controllers
             Address shipperAdress,
             AddressInfo shipperInfo,
             Address retourAddress,
-            /*StdServices services,*/
+            // StdServices services,
             String weight,
             String shippingdate,
             String referencenumber,
@@ -47,7 +45,7 @@ namespace TestApiXls.Controllers
             String reference4
             )
         {
-            InsertDataOperation( )
+            InsertDataOperation();
         }
 
         public ShipmentBcController()
@@ -56,5 +54,5 @@ namespace TestApiXls.Controllers
         }
     }
 
-    }
+    }*/
 }

@@ -6,9 +6,9 @@ namespace TestApiXls.Repository
     {
         private readonly DataContext _context;
 
-        public ICollection<Models.ShipmentBc> GetShipmentBc()
+        public IEnumerable<Models.ShipmentBc> GetShipmentBc()
         {
-            return _context.shipmentBcs.OrderBy(a => a.Shipment).Join(_context.bcDataExts.OrderBy(b => b.barCodeId), _context.bcDataExts).ToList();
+            return _context.shipmentBcs.OrderBy(a => a.Shipment);
         }
 
     }

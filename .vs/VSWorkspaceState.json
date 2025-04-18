@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TestApiXls"
   ],
-  "SelectedNode": "\\TestApiXls.sln",
+  "SelectedNode": "\\TestApiXls\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

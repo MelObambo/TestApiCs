@@ -25,23 +25,24 @@ namespace TestApiXls.Data
         public DbSet<ShipmentBc> shipmentBcs { get; set; }
         public DbSet<Models.Type> types { get; set; }
 
-        public object getConnection()
+        public MySqlConnection getConnection()
         {
-            return connection;
+            var builder = WebApplication.CreateBuilder();
+            string connectionString = "Server=localhost;Database=test_api;User ID=root;Password=;";
+            try
+            {
+                return new MySqlConnection(connectionString);
+            }
+            catch (SqlException e)
+            { return new MySqlConnection(); }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         { }
 
-
-
-        DataContext(DbContextOptions<DataContext> options) : base(options)
+        public DataContext()
         {
-            var builder = WebApplication.CreateBuilder();
-            var contextBuilder = new DbContextOptionsBuilder<DataContext>();
-            string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-            connection = new MySqlConnection(connectionString);
+            this.getConnection();
         }
     }
 }

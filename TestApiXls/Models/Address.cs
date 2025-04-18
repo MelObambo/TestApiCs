@@ -10,7 +10,7 @@
         public required string street { get; set; }
         public string phoneNumber { get; set; }
         public string faxNumber { get; set; }
-        public string geoX { get; set; }
-        public string geoY { get; set; }
+        public float geoX { get; set; }
+        public float geoY { get; set; }
     }
 }
