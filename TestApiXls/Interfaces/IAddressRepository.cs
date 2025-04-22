@@ -1,8 +1,10 @@
-﻿namespace TestApiXls.Interfaces
+﻿using TestApiXls.Models;
+
+namespace TestApiXls.Interfaces
 {
     public interface IAddressRepository
     {
-        ICollection<Models.Address> GetAddresses();
-        ICollection<Models.Address> GetAddresses(string name);
+        ICollection<Address> GetAllAddresses();
+        ICollection<Address> GetAddress(string name);
     }
 }

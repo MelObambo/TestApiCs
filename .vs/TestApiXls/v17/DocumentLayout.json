@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Bureau\\source\\repos\\TestApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\repository\\addressinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\repository\\addressinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\repository\\addressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\repository\\addressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\controllers\\addressesinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\controllers\\addressesinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\controllers\\shipmentbccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\controllers\\shipmentbccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\controllers\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\controllers\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\interfaces\\iaddressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\interfaces\\iaddressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|c:\\users\\bureau\\source\\repos\\testapi\\testapixls\\interfaces\\iaddressinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2392CE5F-18C3-4E68-86CC-66374847B0AD}|TestApiXls\\TestApiXls.csproj|solutionrelative:testapixls\\interfaces\\iaddressinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,93 +50,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShipmentBcController.cs",
-              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Controllers\\ShipmentBcController.cs",
-              "RelativeDocumentMoniker": "TestApiXls\\Controllers\\ShipmentBcController.cs",
-              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Controllers\\ShipmentBcController.cs",
-              "RelativeToolTip": "TestApiXls\\Controllers\\ShipmentBcController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AddressRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Repository\\AddressRepository.cs",
+              "RelativeDocumentMoniker": "TestApiXls\\Repository\\AddressRepository.cs",
+              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Repository\\AddressRepository.cs",
+              "RelativeToolTip": "TestApiXls\\Repository\\AddressRepository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwC8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T14:22:17.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\appsettings.json",
-              "RelativeDocumentMoniker": "TestApiXls\\appsettings.json",
-              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\appsettings.json",
-              "RelativeToolTip": "TestApiXls\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-18T13:30:12.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "TestApiXls\\Data\\DataContext.cs",
-              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Data\\DataContext.cs",
-              "RelativeToolTip": "TestApiXls\\Data\\DataContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wB4AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T08:53:16.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Address.cs",
-              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Models\\Address.cs",
-              "RelativeDocumentMoniker": "TestApiXls\\Models\\Address.cs",
-              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Models\\Address.cs",
-              "RelativeToolTip": "TestApiXls\\Models\\Address.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T11:28:17.798Z",
+              "WhenOpened": "2025-04-22T15:34:27.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddressRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Repository\\AddressRepository.cs",
-              "RelativeDocumentMoniker": "TestApiXls\\Repository\\AddressRepository.cs",
-              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Repository\\AddressRepository.cs*",
-              "RelativeToolTip": "TestApiXls\\Repository\\AddressRepository.cs*",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAADkAAAAMAAAAAAAAAA==",
+              "Title": "AddressInfoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Repository\\AddressInfoRepository.cs",
+              "RelativeDocumentMoniker": "TestApiXls\\Repository\\AddressInfoRepository.cs",
+              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Repository\\AddressInfoRepository.cs",
+              "RelativeToolTip": "TestApiXls\\Repository\\AddressInfoRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAEwBIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T11:28:24.686Z",
+              "WhenOpened": "2025-04-22T14:19:24.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Program.cs",
+              "RelativeDocumentMoniker": "TestApiXls\\Program.cs",
+              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Program.cs",
+              "RelativeToolTip": "TestApiXls\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:40:50.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddressesInfoController.cs",
+              "DocumentMoniker": "C:\\Users\\Bureau\\Source\\Repos\\TestApi\\TestApiXls\\Controllers\\AddressesInfoController.cs",
+              "RelativeDocumentMoniker": "TestApiXls\\Controllers\\AddressesInfoController.cs",
+              "ToolTip": "C:\\Users\\Bureau\\Source\\Repos\\TestApi\\TestApiXls\\Controllers\\AddressesInfoController.cs",
+              "RelativeToolTip": "TestApiXls\\Controllers\\AddressesInfoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:28:59.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IAddressRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Interfaces\\IAddressRepository.cs",
-              "RelativeDocumentMoniker": "TestApiXls\\Interfaces\\IAddressRepository.cs",
-              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Interfaces\\IAddressRepository.cs",
-              "RelativeToolTip": "TestApiXls\\Interfaces\\IAddressRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "AddressesController.cs",
+              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Controllers\\AddressesController.cs",
+              "RelativeDocumentMoniker": "TestApiXls\\Controllers\\AddressesController.cs",
+              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Controllers\\AddressesController.cs",
+              "RelativeToolTip": "TestApiXls\\Controllers\\AddressesController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T12:53:32.006Z",
+              "WhenOpened": "2025-04-22T15:28:42.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddressController.cs",
-              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Controllers\\AddressController.cs",
-              "RelativeDocumentMoniker": "TestApiXls\\Controllers\\AddressController.cs",
-              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Controllers\\AddressController.cs",
-              "RelativeToolTip": "TestApiXls\\Controllers\\AddressController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "TestApiXls\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "TestApiXls\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwDQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T11:10:10.888Z",
+              "WhenOpened": "2025-04-22T15:24:28.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Repository\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "TestApiXls\\Repository\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Repository\\CustomerRepository.cs",
+              "RelativeToolTip": "TestApiXls\\Repository\\CustomerRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:22:41.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAddressInfoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Interfaces\\IAddressInfoRepository.cs",
+              "RelativeDocumentMoniker": "TestApiXls\\Interfaces\\IAddressInfoRepository.cs",
+              "ToolTip": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\Interfaces\\IAddressInfoRepository.cs",
+              "RelativeToolTip": "TestApiXls\\Interfaces\\IAddressInfoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T14:19:36.56Z",
               "EditorCaption": ""
             }
           ]

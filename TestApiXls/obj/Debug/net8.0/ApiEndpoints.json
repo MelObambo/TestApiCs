@@ -1,17 +1,27 @@
 [
   {
-    "ContainingType": "TestApiXls.Controllers.AddressController",
+    "ContainingType": "TestApiXls.Controllers.AddressesController",
     "Method": "GetAddresses",
     "RelativePath": "api/address",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TestApiXls.Models.Address, TestApiXls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "TestApiXls.Controllers.AddressController",
-    "Method": "GetAddresses",
+    "ContainingType": "TestApiXls.Controllers.AddressesController",
+    "Method": "GetAddress",
     "RelativePath": "api/address/{name}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -23,6 +33,119 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TestApiXls.Models.Address, TestApiXls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestApiXls.Controllers.AddressesInfoController",
+    "Method": "GetAddressInfo",
+    "RelativePath": "api/addressInfo/{addressName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addressName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TestApiXls.Models.AddressInfo, TestApiXls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestApiXls.Controllers.CustomersController",
+    "Method": "GetAllCustomers",
+    "RelativePath": "api/customer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TestApiXls.Models.Customer, TestApiXls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestApiXls.Controllers.CustomersController",
+    "Method": "CreateCustomer",
+    "RelativePath": "api/customer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "countryCode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "centerNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TestApiXls.Models.Customer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestApiXls.Controllers.CustomersController",
+    "Method": "GetCustomer",
+    "RelativePath": "api/customer/{number}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "number",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TestApiXls.Models.Customer, TestApiXls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

@@ -1,15 +1,13 @@
 ﻿using TestApiXls.Data;
-using MySql.Data.MySqlClient;
-using TestApiXls.Models;
 using TestApiXls.Interfaces;
+using TestApiXls.Models;
+using MySql.Data.MySqlClient;
 
 namespace TestApiXls.Repository
 {
-    public class AddressRepository : IAddressRepository
+    public class AddressRepository: IAddressRepository
     {
-        private readonly DataContext _context;
-
-        public ICollection<Address> GetAddresses()
+        public ICollection<Address> GetAllAddresses()
         {
             DataContext dataContext = new DataContext();
             MySqlConnection connection = dataContext.getConnection();
@@ -27,7 +25,6 @@ namespace TestApiXls.Repository
                 {
                     Address address = new Address
                     {
-                        id = (int)reader["id"],
                         name = (string)reader["name"],
                         countryPrefix = (string)reader["countryPrefix"],
                         zipCode = (string)reader["zipCode"],
@@ -45,9 +42,10 @@ namespace TestApiXls.Repository
             }
         }
 
-            public ICollection<Address> GetAddresses(string name)
+        public ICollection<Address> GetAddress(string name)
         {
-            DataContext dataContext = new DataContext();
+            ICollection<Address> addresses = [];
+            DataContext dataContext = new();
             MySqlConnection connection = dataContext.getConnection();
 
             String req = "SELECT * FROM Address WHERE name = @name;";
@@ -56,7 +54,6 @@ namespace TestApiXls.Repository
             connection.Open();
             cmd.ExecuteNonQuery();
 
-            ICollection<Address> values = [];
 
             using (MySqlDataReader reader = cmd.ExecuteReader())
             {
@@ -64,7 +61,6 @@ namespace TestApiXls.Repository
                 {
                     Address address = new Address
                     {
-                        id = (int)reader["id"],
                         name = (string)reader["name"],
                         countryPrefix = (string)reader["countryPrefix"],
                         zipCode = (string)reader["zipCode"],
@@ -75,16 +71,10 @@ namespace TestApiXls.Repository
                         geoX = reader["geoX"] != DBNull.Value ? Convert.ToSingle(reader["geoX"]) : 0.0f,
                         geoY = reader["geoY"] != DBNull.Value ? Convert.ToSingle(reader["geoY"]) : 0.0f
                     };
-
-                    values.Add(address);
+                    addresses.Add(address);
                 }
-                return values;
+                return addresses;
             }
-        }
-
-        public AddressRepository(DataContext context)
-        {
-            this._context = context;
         }
     }
 }

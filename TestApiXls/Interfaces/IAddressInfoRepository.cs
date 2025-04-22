@@ -4,6 +4,6 @@ namespace TestApiXls.Interfaces
 {
     public interface IAddressInfoRepository
     {
-        ICollection<AddressInfo> GetAll();
+        ICollection<AddressInfo> GetAddressInfo(string addressName);
     }
 }

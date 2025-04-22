@@ -9,7 +9,6 @@ namespace TestApiXls.Data
 {
     public class DataContext : DbContext
     {
-        private object connection;
 
         public DbSet<Address> addresses { get; set; }
         public DbSet<AddressInfo> addressInfos { get; set; }
@@ -34,7 +33,9 @@ namespace TestApiXls.Data
                 return new MySqlConnection(connectionString);
             }
             catch (SqlException e)
-            { return new MySqlConnection(); }
+            { 
+                return new MySqlConnection();
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

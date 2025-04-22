@@ -3869,7 +3869,7 @@
       "projectName": "TestApiXls",
       "projectPath": "C:\\Users\\Bureau\\Source\\Repos\\TestApi\\TestApiXls\\TestApiXls.csproj",
       "packagesPath": "C:\\Users\\Bureau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bureau\\source\\repos\\TestApi\\TestApiXls\\obj\\",
+      "outputPath": "C:\\Users\\Bureau\\Source\\Repos\\TestApi\\TestApiXls\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3947,5 +3947,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }
