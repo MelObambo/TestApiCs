@@ -2,12 +2,12 @@
 {
     public class AddressInfo
     {
-        public required String Contact { get; set; }
-        public required Address address { get; set; }
-        public String digicode1 { get; set; }
-        public String digicode2 { get; set; }
-        public String  intercomid { get; set; }
-        public String vinfo1 { get; set; }
-        public String vinfo2 { get; set; }
+        public required string contact { get; set; }
+        public required Address Address { get; set; }
+        public string? digicode1 { get; set; }
+        public string? digicode2 { get; set; }
+        public string?  intercomId { get; set; }
+        public string? vInfo1 { get; set; }
+        public string? vInfo2 { get; set; }
     }
 }

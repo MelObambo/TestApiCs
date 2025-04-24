@@ -2,7 +2,8 @@
 {
     public class ParcelInfo
     {
-        public required string barCodeSource { get; set; }
-        public required int barcodeId { get; set; }
+        public required Parcel Parcel { get; set; }
+        public required string BarCodeSource { get; set; }
+        public required int BarcodeId { get; set; }
     }
 }

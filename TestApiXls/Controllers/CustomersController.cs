@@ -18,7 +18,6 @@ namespace TestApiXls.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             
-
             if (customers.Count() == 0)
             {
                 ModelState.AddModelError("", "No Customers found");

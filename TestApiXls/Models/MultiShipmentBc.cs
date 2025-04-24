@@ -2,7 +2,7 @@
 {
     public class MultiShipmentBc
     {
-        public required Shipment masterShipment { get; set; }
-        public required ICollection<ShipmentBc> shipments { get; set; }
+        public required Shipment MasterShipment { get; set; }
+        public required ICollection<ShipmentBc> Shipments { get; set; }
     }
 }

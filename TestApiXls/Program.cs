@@ -16,6 +16,9 @@ builder.Services.AddDbContext<DataContext>();
 builder.Services.AddScoped<IAddressRepository, AddressRepository>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IAddressInfoRepository, AddressInfoRepository>();
+builder.Services.AddScoped<IParcelRepository, ParcelRepository>();
+builder.Services.AddScoped<IParcelInfoRepository, ParcelInfoRepository>();
+builder.Services.AddScoped<IParcelInfoSinRepository, ParcelInfoSinRepository>();
 
 var app = builder.Build();
 

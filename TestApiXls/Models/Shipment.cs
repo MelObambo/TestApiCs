@@ -7,6 +7,6 @@
         public required long parcelnumber { get; set; }
         public required long barcode { get; set; }
         public required Type type { get; set; }
-        public MultiShipment MultiShipments { get; set; }
+        public MultiShipment? MultiShipments { get; set; }
     }
 }

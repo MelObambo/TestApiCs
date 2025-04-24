@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestApiXls")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d1e93682f5aba4718a5f3a3e96809a000ac73c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31247feb6cfbfcbc18bb4b9956b6d375e83e8ceb")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestApiXls")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestApiXls")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,7 +9,7 @@ namespace TestApiXls.Repository
     {
         public ICollection<Address> GetAllAddresses()
         {
-            DataContext dataContext = new DataContext();
+            DataContext dataContext = new();
             MySqlConnection connection = dataContext.getConnection();
 
             String req = "SELECT * FROM Address;";
@@ -23,7 +23,7 @@ namespace TestApiXls.Repository
             {
                 while (reader.Read())
                 {
-                    Address address = new Address
+                    Address address = new()
                     {
                         name = (string)reader["name"],
                         countryPrefix = (string)reader["countryPrefix"],
@@ -59,7 +59,7 @@ namespace TestApiXls.Repository
             {
                 while (reader.Read())
                 {
-                    Address address = new Address
+                    Address address = new()
                     {
                         name = (string)reader["name"],
                         countryPrefix = (string)reader["countryPrefix"],

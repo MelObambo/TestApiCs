@@ -19,7 +19,7 @@ namespace TestApiXls.Data
         public DbSet<MultiShipmentBc> multiShipmentBcs { get; set; }
         public DbSet<ParcelInfo> parcelInfos { get; set; }
         public DbSet<ParcelInfoSin> parcelInfoSins { get; set; }
-        public DbSet<ParcelNumber> parcelNumber { get; set; }
+        public DbSet<Parcel> parcelNumber { get; set; }
         public DbSet<Shipment> shippingDatas { get; set; }
         public DbSet<ShipmentBc> shipmentBcs { get; set; }
         public DbSet<Models.Type> types { get; set; }
@@ -32,8 +32,8 @@ namespace TestApiXls.Data
             {
                 return new MySqlConnection(connectionString);
             }
-            catch (SqlException e)
-            { 
+            catch (SqlException)
+            {
                 return new MySqlConnection();
             }
         }

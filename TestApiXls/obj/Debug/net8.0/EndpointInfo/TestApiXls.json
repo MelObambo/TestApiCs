@@ -270,6 +270,267 @@
           }
         }
       }
+    },
+    "/api/parcelinfo": {
+      "get": {
+        "tags": [
+          "ParcelInfos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/parcelinfo/{parcelNumber}": {
+      "get": {
+        "tags": [
+          "ParcelInfos"
+        ],
+        "parameters": [
+          {
+            "name": "parcelNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/parcelinfosin": {
+      "get": {
+        "tags": [
+          "ParcelInfoSins"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfoSin"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfoSin"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfoSin"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/parcelinfosin/{parcelNumber}": {
+      "get": {
+        "tags": [
+          "ParcelInfoSins"
+        ],
+        "parameters": [
+          {
+            "name": "parcelNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfoSin"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfoSin"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParcelInfoSin"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/parcel": {
+      "get": {
+        "tags": [
+          "Parcels"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parcel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parcel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parcel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/parcel/{parcelNumber}": {
+      "get": {
+        "tags": [
+          "Parcels"
+        ],
+        "parameters": [
+          {
+            "name": "parcelNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parcel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parcel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Parcel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -314,11 +575,13 @@
           },
           "geoX": {
             "type": "number",
-            "format": "float"
+            "format": "float",
+            "nullable": true
           },
           "geoY": {
             "type": "number",
-            "format": "float"
+            "format": "float",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -345,15 +608,15 @@
             "type": "string",
             "nullable": true
           },
-          "intercomid": {
+          "intercomId": {
             "type": "string",
             "nullable": true
           },
-          "vinfo1": {
+          "vInfo1": {
             "type": "string",
             "nullable": true
           },
-          "vinfo2": {
+          "vInfo2": {
             "type": "string",
             "nullable": true
           }
@@ -379,6 +642,68 @@
           "number": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Parcel": {
+        "required": [
+          "centerNumber",
+          "countryCode",
+          "parcelNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "countryCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "centerNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "parcelNumber": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParcelInfo": {
+        "required": [
+          "barcodeId",
+          "barCodeSource",
+          "parcel"
+        ],
+        "type": "object",
+        "properties": {
+          "parcel": {
+            "$ref": "#/components/schemas/Parcel"
+          },
+          "barCodeSource": {
+            "type": "string",
+            "nullable": true
+          },
+          "barcodeId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParcelInfoSin": {
+        "required": [
+          "parcelInfo",
+          "sin"
+        ],
+        "type": "object",
+        "properties": {
+          "parcelInfo": {
+            "$ref": "#/components/schemas/ParcelInfo"
+          },
+          "sin": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

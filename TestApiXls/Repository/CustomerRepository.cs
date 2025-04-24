@@ -2,8 +2,6 @@
 using TestApiXls.Interfaces;
 using TestApiXls.Models;
 using MySql.Data.MySqlClient;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace TestApiXls.Repository
 {
@@ -13,21 +11,20 @@ namespace TestApiXls.Repository
 
         public ICollection<Customer> GetAllCustomers() 
         {
-            DataContext dataContext = new DataContext();
-            MySqlConnection connection = dataContext.getConnection();
+            ICollection<Customer> customers = [];
+            DataContext context = new ();
+            MySqlConnection connection = context.getConnection();
 
             string req = "SELECT * FROM Customer;";
             MySqlCommand cmd = new(req, connection);
             connection.Open();
             cmd.ExecuteNonQuery();
 
-            ICollection<Customer> customers = [];
-
             using (MySqlDataReader reader = cmd.ExecuteReader())
             {
                 while (reader.Read())
                 {
-                    Customer customer = new Customer
+                    Customer customer = new()
                     {
                         countryCode = (int)reader["countryCode"],
                         centerNumber = (int)reader["centerNumber"],
@@ -43,8 +40,8 @@ namespace TestApiXls.Repository
         public ICollection<Customer> GetCustomer(int number)
         {
             ICollection<Customer> customers = [];
-            DataContext dataContext = new DataContext();
-            MySqlConnection connection = dataContext.getConnection();
+            DataContext context = new ();
+            MySqlConnection connection = context.getConnection();
 
             string req = "SELECT * FROM Customer WHERE number = @number;";
             MySqlCommand cmd = new(req, connection);
@@ -57,7 +54,7 @@ namespace TestApiXls.Repository
             {
                 while (reader.Read())
                 {
-                    Customer customer = new Customer
+                    Customer customer = new()
                     {
                         countryCode = (int)reader["countryCode"],
                         centerNumber = (int)reader["centerNumber"],
@@ -73,8 +70,8 @@ namespace TestApiXls.Repository
         public ICollection<Customer> GetCustomer(int countryCode, int centerNumber)
         {
             ICollection<Customer> customers = [];
-            DataContext dataContext = new DataContext();
-            MySqlConnection connection = dataContext.getConnection();
+            DataContext context = new ();
+            MySqlConnection connection = context.getConnection();
 
             string req = "SELECT * FROM Customer WHERE countryCode = @countryCode && centerNumber = @centerNumber;";
             MySqlCommand cmd = new(req, connection);
@@ -87,7 +84,7 @@ namespace TestApiXls.Repository
             using (MySqlDataReader reader = cmd.ExecuteReader())
             {
                 reader.Read();
-                Customer customer = new Customer
+                Customer customer = new()
                 {
                     countryCode = (int)reader["countryCode"],
                     centerNumber = (int)reader["centerNumber"],
@@ -99,32 +96,10 @@ namespace TestApiXls.Repository
             }
         }
 
-        public bool CreateCustomer(Customer customer)
-        {
-            DataContext dataContext = new DataContext();
-            MySqlConnection connection = dataContext.getConnection();
-
-            string req = "INSERT INTO Customer(countryCode, centerNumber, number) VALUES (@countryCode, @centerNumber, @number);";
-            MySqlCommand cmd = new(req, connection);
-            cmd.Parameters.AddWithValue("@countryCode", customer.countryCode);
-            cmd.Parameters.AddWithValue("@centerNumber", customer.centerNumber);
-            cmd.Parameters.AddWithValue("@number", customer.number);
-            connection.Open();
-            try
-            {
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (MySqlException e)
-            {
-                return false;
-            }
-        }
-
         public bool CreateCustomer(int countryCode, int centerNumber)
         {
-            DataContext dataContext = new DataContext();
-            MySqlConnection connection = dataContext.getConnection();
+            DataContext context = new ();
+            MySqlConnection connection = context.getConnection();
 
             string numberReq = "SELECT number FROM Customer ORDER BY number DESC LIMIT 1;";
             int number;
@@ -151,7 +126,7 @@ namespace TestApiXls.Repository
                 this.number = number;
                 return true;
             }
-            catch (MySqlException e)
+            catch (MySqlException)
             {
                 return false;
             }

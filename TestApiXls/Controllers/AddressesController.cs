@@ -12,18 +12,18 @@ namespace TestApiXls.Controllers
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Address>))]
-        public IActionResult GetAddresses()
+        public IActionResult GetAllAddresses()
         {
             var addresses = _addressRepository.GetAllAddresses();
-
+            
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (addresses.Count() == 0) {
+            if (addresses.Count() == 0)
+            {
                 ModelState.AddModelError("", "No addresses found");
                 return StatusCode(StatusCodes.Status404NotFound, ModelState);
             }
-            
             return Ok(addresses);
         }
 
